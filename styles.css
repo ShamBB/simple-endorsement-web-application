@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #1b1924;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ====
+typography 
+====*/
+
+h1,
+h2 {
+  color: #fff;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+btn {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+.img {
+  background: #1b1924;
+  width: 90px;
+}
+
+.endorsement-ul {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+}
+
+.like-txt {
+  font-size: 1rem;
+}
+
+.to-txt,
+.from-txt,
+.like-txt-amount {
+  font-weight: 700;
+}
+
+.love-icon {
+  cursor: pointer;
+}
+
+.love-icon:hover,
+.love-icon:focus {
+  color: red;
+}
+/* general layout */
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+}
+
+.main-grid > * {
+  grid-column: 2 / -2;
+  justify-self: center;
+}
+
+.container {
+  padding: 3.2em 0;
+  background-color: #1b1924;
+}
+
+.btn,
+.endorsement-input,
+.input-text {
+  border-radius: 8px;
+  border: 0;
+}
+
+/* layout :- Comment section */
+
+.endorsement-ul p {
+  margin: 0;
+  padding: 0;
+}
+
+.endorsement-li {
+  background-color: #fff;
+  padding: 1em;
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
+}
+
+.to-txt,
+.endorsement-txt {
+  grid-column: 1/-1;
+}
+
+.like-txt {
+  justify-self: end;
+}
+
+.endorsement-ul > li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+  .from-txt,
+  .like-txt {
+    grid-column: 1/-1;
+  }
+
+  .like-txt {
+    justify-self: start;
+  }
+}
+
+/* button */
+.btn {
+  background: #28a9f1;
+  font-size: 1.375rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  padding: 1em 0.75em;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #065d8b;
+}
+
+/* form */
+.endorsement-form {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.endorsement-input,
+.input-text {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  background-color: #444059;
+  font-size: 1rem;
+}
+
+.endorsement-input {
+  height: 118px;
+  resize: none;
+  padding: 0.75em 1em;
+  width: 100%;
+}
+
+.input-text {
+  padding: 0.5em;
+  text-align: center;
+  flex-grow: 1;
+  width: 170px;
+}

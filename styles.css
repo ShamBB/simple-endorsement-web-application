@@ -81,7 +81,7 @@ ul {
 .container {
   padding: 3.2em 0;
   background-color: #1b1924;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 .btn,
